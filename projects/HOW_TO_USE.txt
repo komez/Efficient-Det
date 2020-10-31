@@ -1,0 +1,18 @@
+①project/coco_{日付}ファイルを編集する
+projectname以外はいじらなくていいと思う。
+
+②以下のコマンドをYet-Another...ディレクトリ上で実行するとモデルが動く。
+事前学習モデルはgithub( https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch )からダウンロードしたもの
+-cオプションで指定しているのは前述したd0とかd7に対応する数値
+--load_weightsで指定する事前学習済みパラメータの方のd*の数値は一致している必要がある
+
+>>> python train.py -c 0 -p project_name \
+        --batch_size 8 --lr 1e-5 --num_epochs 100 \
+        --load_weights efficientdet-d0.pth \
+        --data_path <データセットディレクトリproject_nameが存在するディレクトリ>
+
+>>> python train.py -c 8 -p coco_1014 \
+        --batch_size 8 --lr 1e-5 --num_epochs 100 \
+        --load_weights efficientdet-d8.pth \
+        --data_path /Usersdata/kome/Drshirasaki/DrShirasaki/secretion_prediction/ssd/CytokineRelease_Dataset/CytokineRelease/Efficient_det_data/datasets
+        
