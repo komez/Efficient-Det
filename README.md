@@ -1,5 +1,5 @@
 # Efficient-Det
-物体検出モデルefficient-detを改良したものdocker
+物体検出モデルefficient-detを改良したもの
 
 # install requirements
 ```
@@ -14,7 +14,9 @@ pip install torchvision==0.5.0
 python efficientdet_test.py
 ```
 
-
+# datasets
+Efficient-det-dataset　に用意する。　　
+train-valにデータを分ける方法はフォルダ内のRead Meファイルに記載されている。
 
 # your dataset structure should be like this
 ```python
@@ -44,4 +46,6 @@ datasets/
         -annotations
             -instances_train2017.json
             -instances_val2017.json
-            ```
+```
+## 参照
+https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch
