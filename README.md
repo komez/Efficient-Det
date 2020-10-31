@@ -2,17 +2,22 @@
 物体検出モデルefficient-detを改良したものdocker
 
 # install requirements
-"pip install pycocotools numpy opencv-python tqdm tensorboard tensorboardX pyyaml webcolors
+'''python
+pip install pycocotools numpy opencv-python tqdm tensorboard tensorboardX pyyaml webcolors
 pip install torch==1.4.0
-pip install torchvision==0.5.0"
+pip install torchvision==0.5.0
+'''
  
 # run the simple inference script
-"python efficientdet_test.py"
+'''python
+python efficientdet_test.py
+'''
 
 
 
 # your dataset structure should be like this
-"datasets/
+'''python
+datasets/
     -your_project_name/
         -train_set_name/
             -*.jpg
@@ -20,10 +25,12 @@ pip install torchvision==0.5.0"
             -*.jpg
         -annotations
             -instances_{train_set_name}.json
-            -instances_{val_set_name}.json"
+            -instances_{val_set_name}.json
+'''
 
 # for example, coco2017
-"datasets/
+'''python
+datasets/
     -coco2017/
         -train2017/
             -000000000001.jpg
@@ -35,4 +42,5 @@ pip install torchvision==0.5.0"
             -000000000006.jpg
         -annotations
             -instances_train2017.json
-            -instances_val2017.json"
+            -instances_val2017.json
+            '''
