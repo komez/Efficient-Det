@@ -1,0 +1,20 @@
+①/row_data/train_val_split.ipnb実行
+train,valに分かれたxmlフォルダxml_tra, xml_val作成
+train,valに分かれたjpgフォルダxml_tra, xml_val作成
+rowdataに保存
+
+②/datasets/convert_to_coco.ipynb実行
+ 最終的なデータセット
+datasets/
+    -datasets{日付}/
+        -train/
+            -*.jpg
+        -val/
+            -*.jpg
+        -annotations
+            -instances_train.json
+            -instances_val.json
+
+
+
+
